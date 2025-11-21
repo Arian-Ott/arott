@@ -34,5 +34,7 @@ mykernel.iso: mykernel.bin
 run: mykernel.iso
 	(killall VirtualBoxVM && sleep 1) || true
 	VirtualBoxVM --startvm "asdf" &
-
+.PHONY: clean
+clean:
+	rm -f $(objects) mykernel.bin mykernel.iso
 
