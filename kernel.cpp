@@ -1,5 +1,5 @@
 #include "types.h"
-
+#include "gdt.h"
 
 typedef void (*constructor)();
 extern "C" constructor start_ctors;
@@ -24,6 +24,7 @@ extern "C" void kernelMain(void* multiboot_structure, uint32_t magicnumber)
 {
     printf("Arott OS - By Arian Ott <arian.ott@ieee.org>");
 
+    GlobalDescriptorTable gdt;
 
    while(1);
 
