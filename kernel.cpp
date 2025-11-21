@@ -19,7 +19,7 @@ void printf(char* str)
 }
 extern "C" void kernelMain(void* multiboot_structure, unsigned int magicnumber)
 {
-    printf("Hello World! - By Arian Ott");
+    printf("Hello World! - By Arian Ott 2");
     while(1);
 
 }
