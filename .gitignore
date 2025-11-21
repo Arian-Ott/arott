@@ -1,3 +1,2 @@
-kernel.o
-loader.o
+*.o
 mykernel.bin
