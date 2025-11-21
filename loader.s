@@ -2,7 +2,7 @@
 .set FLAGS, (1<<0 | 1<<1)
 .set CHECKSUM, -(MAGIC + FLAGS)
 
-.section .multboot
+.section .multiboot
     .long MAGIC
     .long FLAGS
     .long CHECKSUM
@@ -13,6 +13,7 @@
 
 loader:
     mov $kernel_stack, %esp
+    call callConstructors
     push %eax
     push %ebx
     call kernelMain
