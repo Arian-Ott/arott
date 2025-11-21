@@ -22,7 +22,9 @@ void printf(char* str)
 }
 extern "C" void kernelMain(void* multiboot_structure, uint32_t magicnumber)
 {
-    printf("Hello World! - By Arian Ott 2");
-    while(1);
+    printf("Arott OS - By Arian Ott <arian.ott@ieee.org>");
+
+
+   while(1);
 
 }
