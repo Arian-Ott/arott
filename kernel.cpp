@@ -54,6 +54,7 @@ extern "C" void kernelMain(void* multiboot_structure, uint32_t magicnumber)
 {
     printf("Arott OS - By Arian Ott <arian.ott@ieee.org>");
     printf("\n(c) 2025 Arian Ott");
+    printf("\nLicensed under GNU GPL v3 or later.");
 
     GlobalDescriptorTable gdt;
 
